@@ -21,6 +21,7 @@ namespace ConsoleApplication1
             }
         }
 
+
         Dictionary<string, int> Inventory = new Dictionary<string, int>();
         Dictionary<string, int> ProductPrice = new Dictionary<string, int>();
         public void BuildInventory()
