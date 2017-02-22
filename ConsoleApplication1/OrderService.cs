@@ -24,7 +24,7 @@ namespace ConsoleApplication1
 
             if (!inventoryService.CheckInventory(productId, quantity))
             {
-                return string.Format("Reuired Quantity of {0} For Product With Id {1} Not Availlable!!", quantity, productId);
+                return string.Format("Required Quantity of {0} For Product With Id {1} Not Availlable!!", quantity, productId);
             }
 
             if(paymentService.ChargePayment(cardNumber, inventoryService.GetProductPrice(productId)))

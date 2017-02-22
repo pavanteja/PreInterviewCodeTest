@@ -43,7 +43,7 @@ namespace ConsoleApplication1
 
         public int GetProductPrice(string productId)
         {
-            return ProductPrice.ContainsKey(productId) ? Inventory[productId] : -1;
+            return ProductPrice.ContainsKey(productId) ? ProductPrice[productId] : -1;
 
         }
         public bool CheckProductInInventory(string productId)
